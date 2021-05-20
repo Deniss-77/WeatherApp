@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2Ao-0R-1Ve">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="G70-M8-c4P">
+                                <rect key="frame" x="132" y="332" width="150" height="19.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ощущается как " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGR-Zb-xq1">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd1-OM-nSY">
+                                        <rect key="frame" x="131" y="0.0" width="19" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BWP-Sz-ckg">
+                                <rect key="frame" x="133" y="250" width="148" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cD-5v-YJ7">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="74"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="65"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLJ-Al-agq">
+                                        <rect key="frame" x="79" y="0.0" width="69" height="74"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="65"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uPe-dO-gl9">
+                                <rect key="frame" x="10" y="777" width="394" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название города" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dF-3R-wHA">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="45"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE2-yD-nDE">
+                                        <rect key="frame" x="349" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Gi0-Lf-uPJ"/>
+                                            <constraint firstAttribute="width" constant="45" id="R8A-Ad-gMY"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" image="searchIcon"/>
+                                        <connections>
+                                            <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5j-xz-Cpj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="11a-Hg-T4f">
+                                <rect key="frame" x="119.5" y="55.5" width="177.5" height="174"/>
+                                <color key="tintColor" red="0.73050363519677852" green="0.92166415323885587" blue="0.98328930139541626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="9Qz-eG-cyl"/>
+                                    <constraint firstAttribute="height" constant="175" id="X2F-Zl-JKW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uPe-dO-gl9" secondAttribute="trailing" constant="10" id="1T0-B2-r1Y"/>
+                            <constraint firstAttribute="bottom" secondItem="2Ao-0R-1Ve" secondAttribute="bottom" id="6L4-vY-03f"/>
+                            <constraint firstItem="2Ao-0R-1Ve" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CHB-ng-7jf"/>
+                            <constraint firstItem="G70-M8-c4P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M9m-Nk-tGL"/>
+                            <constraint firstItem="BWP-Sz-ckg" firstAttribute="top" secondItem="11a-Hg-T4f" secondAttribute="bottom" constant="18" id="bd5-c8-Ihe"/>
+                            <constraint firstItem="11a-Hg-T4f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="cEO-z3-oA6"/>
+                            <constraint firstItem="BWP-Sz-ckg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ct5-Gb-r8U"/>
+                            <constraint firstItem="G70-M8-c4P" firstAttribute="top" secondItem="BWP-Sz-ckg" secondAttribute="bottom" constant="8" id="ekI-W5-nxX"/>
+                            <constraint firstItem="uPe-dO-gl9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kQL-zY-s8o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uPe-dO-gl9" secondAttribute="bottom" constant="40" id="m5s-5m-R1l"/>
+                            <constraint firstItem="2Ao-0R-1Ve" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nvM-q3-OCI"/>
+                            <constraint firstItem="2Ao-0R-1Ve" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qKt-Pz-Emi"/>
+                            <constraint firstItem="11a-Hg-T4f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s1R-fz-lJp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="3dF-3R-wHA" id="sk9-Jm-cp9"/>
+                        <outlet property="feelsLikeTemperature" destination="Bd1-OM-nSY" id="NpD-lB-mVr"/>
+                        <outlet property="temperatureLabel" destination="9cD-5v-YJ7" id="tvw-9N-oFj"/>
+                        <outlet property="weatherImageView" destination="11a-Hg-T4f" id="Yrs-LV-BAY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="640" height="360"/>
+        <image name="cloud.sun.fill" catalog="system" width="128" height="93"/>
+        <image name="searchIcon" width="490" height="482"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
